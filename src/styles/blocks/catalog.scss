@@ -1,0 +1,30 @@
+.catalog {
+  &__container {
+    display: grid;
+    grid-template-columns: $cardWidth;
+    justify-content: center;
+    align-items: center;
+    gap: 46px 48px;
+    padding: 50px 40px;
+
+    transition-duration: 3000ms;
+  }
+}
+
+@media (min-width: 488px) {
+  .catalog__container {
+    grid-template-columns: repeat(2, $cardWidth);
+  }
+}
+
+@media (min-width: 768px) {
+  .catalog__container {
+    grid-template-columns: repeat(3, $cardWidth);
+  }
+}
+
+@media (min-width: 1024px) {
+  .catalog__container {
+    grid-template-columns: repeat(4, $cardWidth);
+  }
+}
