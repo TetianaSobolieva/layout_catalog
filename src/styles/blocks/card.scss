@@ -17,10 +17,7 @@
 
   &:hover {
     transform: scale(1.2);
-
-    &__name {
-      color: $color-title;
-    }
+    transition: transform $duration ease;
   }
 
   &__image {
@@ -92,12 +89,13 @@
 
     background-color: $color-blue;
 
+    transition:
+      background-color $duration ease,
+      color $duration ease;
+
     &:hover {
-      align-items: center;
       color: $color-blue;
       background-color: $color-white;
-
-      transition-duration: $duration;
     }
   }
 
@@ -116,4 +114,9 @@
     line-height: 14px;
     color: $color-main;
   }
+}
+
+.card:hover .card__name {
+  transition: $duration ease;
+  color: $color-title;
 }
