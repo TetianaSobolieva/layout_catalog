@@ -4,8 +4,8 @@
     grid-template-columns: $cardWidth;
     justify-content: center;
     align-items: center;
-    gap: 46px 48px;
-    padding: 50px 40px;
+    gap: $catalog-gap;
+    padding: $padding 40px;
   }
 }
 
